@@ -1,0 +1,13 @@
+<%- include("../layouts/baseHead.html", { title }) %>
+  <section>
+    <h2>Id</h2>
+    <p>
+      <%= animal.id %>
+    </p>
+    <h2>Name</h2>
+    <p>
+      <%= animal.name %>
+    </p>
+  </section>
+  <button><a href="/animal">Back to list</a></button>
+  <%- include("../layouts/baseBottom.html") %>

@@ -1,0 +1,7 @@
+<%- include("../layouts/baseHead.html", { title }) %>
+  <h1>Do you really want to delete?</h1>
+  <form action="<%= animalId %>" method="post">
+    <button>Delete</button>
+  </form>
+  <button><a href="/animal">Back to list</a></button>
+  <%- include("../layouts/baseBottom.html") %>

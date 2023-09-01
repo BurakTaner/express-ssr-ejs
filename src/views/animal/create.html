@@ -1,0 +1,9 @@
+<%- include("../layouts/baseHead.html", { title }) %>
+  <h1>Create an animal in database</h1>
+  <form method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" />
+    <button type="submit">Create</button>
+  </form>
+  <button><a href="/animal">Back to list</a></button>
+  <%- include("../layouts/baseBottom.html") %>

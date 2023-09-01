@@ -1,0 +1,10 @@
+<%- include("../layouts/baseHead.html", { title }) %>
+  <h1>Update <%= animal.name %>
+  </h1>
+  <form method="post" action="<%= animal.id %>">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" value="<%= animal.name %>" />
+    <button type="submit">Update</button>
+  </form>
+  <button><a href="/animal">Back to list</a></button>
+  <%- include("../layouts/baseBottom.html") %>
